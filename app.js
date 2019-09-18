@@ -8,12 +8,11 @@ app = express();
 
 //Conexao MongoDB
 
-mongoose.connect('mongodb://"+srv+"://root:root@cluster0-84qfi.mongodb.net/test?retryWrites=true&w=majority', {
-    useNewUrlParser: true
-},(err)=>{
-console.log(`Erro ao conectar ${err}`);
-
+mongoose.connect('mongodb+srv://ROOT:ROOT@cluster0-84qfi.mongodb.net/test?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
 });
+
+
 
 app.use(bodyParser());
 
